@@ -1,3 +1,6 @@
-# Simulaciones PhET
+# simulaciones phet recomendadas
 
-Listado de simulaciones recomendadas con enlaces.
+- movimiento en 1d
+- estados de la materia
+- reacciones ácido-base
+- circuitos eléctricos básicos
