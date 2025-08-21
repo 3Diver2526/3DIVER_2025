@@ -1,0 +1,20 @@
+site_name: "Ámbito Científico-Tecnológico 3º ESO Diversificación"
+site_url: https://3Diver2526.github.io/3DIVER_2025/
+theme:
+  name: material
+  language: es
+
+nav:
+  - Inicio: index.md
+  - Programación:
+      - Programación Didáctica: programacion/programacion_didactica.md
+      - Criterios de Evaluación: programacion/criterios_evaluacion.md
+      - Temporalización: programacion/temporalizacion.md
+  - Aula:
+      - Unidad 1: aula/unidad1-laboratorio_digital.md
+      - Unidad 2: aula/unidad2-celula_interactiva.md
+  - Recursos:
+      - Apps: recursos/apps/README.md
+      - Simulaciones PhET: recursos/simulaciones/phET_enlaces.md
+      - Guía Visual Coding: recursos/materiales/guia_visualcoding.md
+
