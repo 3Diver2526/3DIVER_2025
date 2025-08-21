@@ -1,0 +1,145 @@
+# Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)
+
+## 1. Idea de la unidad  
+El producto final es una **mini-app tipo “quiz + exploración”** creada con Visual Coding cuya finalidad es **explicar y practicar**:
+- Biología y Geología: composición química de los seres vivos (CHONPS, agua, sales, macromoléculas).
+- Física y Química: estructura de la materia (átomo, molécula, elemento, compuesto, mezcla; cambios físicos frente a químicos).
+- Matemáticas: números naturales y potencias (notación científica básica, operaciones con potencias, órdenes de magnitud).
+
+La parte tecnológica se pone **al servicio del contenido**: la app debe **ilustrar** conceptos y permitir **práctica guiada** con retroalimentación.
+
+## 2. Objetivos específicos  
+1) Comprender y comunicar la composición química de los seres vivos y la estructura de la materia con ejemplos y representaciones.  
+2) Operar con números naturales y potencias en situaciones científicas sencillas (masas relativas, escalas, órdenes de magnitud).  
+3) Diseñar una mini-app que **explique** conceptos con pantallas de exploración y **practique** con preguntas autocorregibles.  
+4) Colaborar en equipo con roles, evidencias en Moodle y control de versiones del proyecto.  
+5) Presentar la app, justificar decisiones de diseño y responder preguntas del grupo clase.
+
+## 3. Criterios de evaluación del ámbito (selección)  
+a) Aplicar modelos y operaciones para explicar fenómenos sencillos y resolver problemas cotidianos.  
+b) Diseñar y desarrollar un proyecto tecnológico **que comunique contenido científico con rigor**.  
+c) Usar TIC de forma segura y creativa para representar y practicar conocimiento científico.  
+d) Comunicar resultados con vocabulario específico y soportes digitales.
+
+## 4. Saberes básicos de referencia  
+- Biología y Geología: bioelementos primarios y secundarios; agua y sales; glúcidos, lípidos, proteínas, ácidos nucleicos.  
+- Física y Química: partículas, átomo y molécula; elemento, compuesto y mezcla; estados y cambios.  
+- Matemáticas: naturales y potencias; propiedades de las potencias; notación científica elemental.
+
+## 5. Especificaciones del producto  
+- **Módulo Exploración**: pantallas con infografías simples y botones que despliegan definiciones, ejemplos y comparaciones (por ejemplo, “Elemento vs Compuesto”, “CHONPS en porcentajes aproximados”).  
+- **Módulo Quiz**: al menos **8–10 ítems** mezclando selección, completar y cálculo con potencias; retroalimentación inmediata con explicación breve.  
+- **Accesibilidad**: contraste alto, botones grandes, textos claros y opción de locuciones breves.  
+- **Datos**: variables para aciertos, intentos y tiempo; lista de preguntas y lista de respuestas correctas.
+
+## 6. Banco de ítems y contenidos de ejemplo  
+**Exploración (textos breves sugeridos):**  
+- CHONPS: “C ~18 %, H ~10 %, O ~65 %, N ~3 %, P y S <1 % en masa corporal.”  
+- Elemento vs Compuesto: “Elemento: un tipo de átomo (O₂). Compuesto: combinación fija de elementos (H₂O).”  
+- Mezcla: “Proporción variable. Se separa por métodos físicos (filtración, destilación).”  
+- Cambios: “Físico: no forma nuevas sustancias (fusión del hielo). Químico: forma sustancias nuevas (oxidación).”
+
+**Quiz (muestra de 12 ítems):**  
+1) Selección: “¿Cuál **no** es bioelemento primario? (C, H, O, Ca).”  
+2) Emparejar: “Une cada término con su definición: Elemento, Compuesto, Mezcla, Molécula.”  
+3) Cálculo con potencias: “Escribe en notación científica 150000000.”  
+4) Verdadero/Falso: “Una mezcla siempre puede separarse por métodos físicos.”  
+5) Múltiple: “Selecciona los componentes mayoritarios del cuerpo humano por masa.”  
+6) Cálculo: “Evalúa 2³·5².”  
+7) Clasificación: “Clasifica: NaCl, Aire, H₂, Leche (Compuesto, Mezcla, Elemento, Mezcla).”  
+8) Cambio físico o químico: “Evaporación del agua.”  
+9) Orden de magnitud: “Elige el orden de magnitud de 32000.”  
+10) Potencias: “Simplifica 10³·10⁴.”  
+11) Relación: “Relaciona cada partícula con su ubicación: Protón, Neutrón, Electrón.”  
+12) Justificación corta: “Explica en una frase la diferencia entre elemento y compuesto.”
+
+## 7. Secuencia de sesiones (30 × 55 min aprox.)  
+**Fase 0 · Arranque**  
+1. Bienvenida, diagnóstico y equipos.  
+2. Ideas previas y foro en Moodle; glosario colaborativo de 12 términos.
+
+**Fase 1 · Base conceptual**  
+3. CHONPS, agua y sales; actividad de arrastre en Moodle.  
+4. Átomo, molécula, elemento, compuesto y mezcla; tarjetas de clasificación.  
+5. Naturales y potencias; reglas básicas y práctica guiada.  
+6. Problemas con potencias en contexto científico; coevaluación rápida.
+
+**Fase 2 · Visual Coding básico**  
+7. Primer proyecto; eventos, escenas y sprites.  
+8. Variables y operadores para marcador y tiempo.  
+9. Condicionales, aleatoriedad y control de intentos.  
+10. Listas para banco de preguntas y respuestas.
+
+**Fase 3 · Diseño centrado en contenido**  
+11. Guion de pantallas: **Exploración** y **Quiz**; reparto de subtemas por parejas.  
+12. Redacción de textos científicos breves y revisión entre equipos.  
+13. Creación de recursos gráficos; citación de fuentes libres.  
+14. Prototipo alfa con 3 preguntas y 2 pantallas de exploración.
+
+**Fase 4 · Profundización y cálculo**  
+15. Ampliación a 6 preguntas e inclusión de 2 ítems de potencias.  
+16. Pruebas cruzadas y registro de errores.  
+17. Mejora del flujo y de la explicación en retroalimentación.  
+18. Estadísticas de juego y pantalla final con resumen.
+
+**Fase 5 · Tecnología contextualizada**  
+19. Componentes del ordenador y relación HW–SW; pantalla informativa dentro de “Exploración”.  
+20. Seguridad digital y licencias; comprobación de recursos.
+
+**Fase 6 · Calidad y accesibilidad**  
+21. Checklist de accesibilidad; botones, contraste y locuciones.  
+22. Limpieza de bloques y comentarios; optimización.  
+23. Pruebas completas con rúbrica técnica.  
+24. Ajustes finales del contenido y de los ítems de potencia.
+
+**Fase 7 · Publicación y defensa**  
+25. Póster o vídeo de 1 minuto “Así explica nuestra app”.  
+26. Ensayo y feedback entre equipos.  
+27. Entrega en Moodle: archivo y memoria técnica breve.  
+28. Feria de proyectos y votación.  
+29. Autoevaluación y coevaluación en Moodle.  
+30. Cierre y plan de mejora.
+
+## 8. Tareas en Moodle y evidencias  
+- Foro inicial, glosario, cuestionarios de base y de potencias.  
+- Tarea “Prototipo alfa” y tarea final “App Laboratorio Digital”.  
+- Formulario de coevaluación y autoevaluación.  
+- Carpeta de equipo con actas y versiones.
+
+## 9. Esqueleto técnico orientativo (Scratch/MakeCode, pseudocódigo)  
+- Variables: `puntuacion`, `tiempo`, `indicePregunta`, `intentos`.  
+- Listas: `preguntas[]`, `opcionesA[]`, `opcionesB[]`, `respuestaCorrecta[]`, `explicacion[]`.  
+- Flujo:  
+  1) Al pulsar “Iniciar” → `puntuacion=0; indicePregunta=1;` mostrar menú con “Exploración” o “Quiz”.  
+  2) Exploración → pantallas con botones que muestran textos y ejemplos.  
+  3) Quiz → mostrar `preguntas[indice]` y opciones; si acierta, `puntuacion+=1` y mostrar `explicacion[indice]`.  
+  4) Al finalizar → pantalla de resultados con `puntuacion` y tiempo consumido.
+
+## 10. Diferenciación y DUA  
+- Plantillas con bloques guía para equipos que lo necesiten.  
+- Extensiones: notación científica en dos ítems, barajar preguntas, guardar mejores puntuaciones.  
+- Accesos: textos simplificados, audio, pictogramas y colores de alto contraste.
+
+## 11. Rúbrica de evaluación del proyecto (ajustada a enfoque “contenido primero”)
+
+**Ponderación global:** 40 % del trimestre.
+
+| Criterio (peso) | Excelente · 4 | Notable · 3 | Básico · 2 | En progreso · 1 |
+|---|---|---|---|---|
+| Rigor del contenido científico y matemático (30 %) | Explica y practica con exactitud CHONPS, materia y potencias; retroalimentación clara y fundamentada. | Explica con precisión general y pocas imprecisiones. | Explicaciones incompletas o con varias dudas. | Explicaciones incorrectas o confusas. |
+| Funcionalidad y usabilidad (15 %) | Flujo estable, sin errores, navegación clara y accesible. | Algún fallo menor o detalle de navegación. | Flujo parcial o poco claro. | App no operativa. |
+| Programación y organización del código (10 %) | Variables y listas bien usadas, bloques ordenados y comentados. | Código adecuado con pequeñas redundancias. | Código desordenado o sin comentarios. | Código incoherente. |
+| Calidad de la explicación en “Exploración” (15 %) | Infografías simples, ejemplos pertinentes y buenas comparaciones. | Explicación correcta con margen de mejora. | Explicación mínima y poco visual. | Sin explicación útil. |
+| Quiz y retroalimentación (10 %) | Ítems variados y retroalimentación con mini-explicación. | Ítems adecuados con explicaciones breves. | Ítems repetitivos con retroalimentación escasa. | Ítems mal planteados. |
+| Trabajo cooperativo y evidencias en Moodle (10 %) | Roles rotados, actas y entregas completas y puntuales. | Evidencias casi completas. | Evidencias parciales. | Sin evidencias. |
+| Comunicación y defensa (10 %) | Presentación clara y ajustada al tiempo; responde con seguridad. | Presentación correcta. | Presentación débil. | No presenta o no se entiende. |
+
+**Cálculo:** Media ponderada de criterios. Coevaluación y autoevaluación ajustan ±0,5 si procede.
+
+## 12. Lista de comprobación de entrega  
+- La app **explica** y **practica** los tres bloques (BG, FyQ, Mates).  
+- Hay mínimo 2 pantallas de “Exploración” y 8–10 ítems de “Quiz”.  
+- Las potencias aparecen al menos en 2 ítems.  
+- Los textos son claros y citan recursos libres.  
+- El código está limpio y comentado.  
+- La memoria técnica adjunta incluye objetivo, guion, capturas y mejoras.
