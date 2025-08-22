@@ -7,9 +7,7 @@ Aquí encontrarás todo el material del ámbito científico-tecnológico de 3º 
 - [Criterios de Evaluación](programacion/criterios_evaluacion.md)
 
 ## 📗 Aula
-- [Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)](aula/Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias).md)
-- [Unidad 2: Célula interactiva](aula/unidad2-celula_interactiva.md)
-
+- [Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)](aula/u1-laboratorio-digital.md)
 - [Unidad 2: Célula interactiva](aula/unidad2-celula_interactiva.md)
 
 ## 📂 Recursos
