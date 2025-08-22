@@ -83,7 +83,7 @@ Con 10 sesiones a la semana se disponen de **≈ 376 sesiones**. Distribución p
 | Bloque | Sesiones | Detalle |
 |---|---:|---|
 | Diagnóstico inicial y normas | 10 | Arranque de curso, Moodle y seguridad digital |
-| U1 | 30 | Proyecto “Laboratorio digital” |
+| U1 | 30 | Proyecto “Laboratorio Digital (Tecnología al servicio de las ciencias)” |
 | U2 | 30 | App de célula y medida de errores |
 | U3 | 30 | Salud y escalas |
 | **Proyecto 1** | 20 | Integrado U1–U3 |
