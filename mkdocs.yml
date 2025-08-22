@@ -11,12 +11,13 @@ nav:
       - Criterios de Evaluación: programacion/criterios_evaluacion.md
       - Temporalización: programacion/temporalizacion.md
   - Aula:
-      - "Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)": aula/Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias).md
+      - "Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)": aula/u1-laboratorio-digital.md
       - Unidad 2: aula/unidad2-celula_interactiva.md
   - Recursos:
       - Apps: recursos/apps/README.md
       - Simulaciones PhET: recursos/simulaciones/phET_enlaces.md
       - Guía Visual Coding: recursos/materiales/guia_visualcoding.md
+
 
 
 
