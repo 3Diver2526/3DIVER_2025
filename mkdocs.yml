@@ -1,14 +1,20 @@
-site_name: "Ámbito Científico-Tecnológico 3º ESO Diversificación"
+site_name: "Ámbito científico-tecnológico 3º ESO Diversificación"
 site_url: https://3Diver2526.github.io/3DIVER_2025/
 theme:
   name: material
   language: es
+  features:
+    - navigation.sections      # secciones en el lateral
+    - navigation.expand        # árbol expandido por defecto
+    - toc.integrate            # el índice (encabezados) se integra en el lateral
+    - navigation.top           # botón “volver arriba”
+    - content.code.copy        # botón copiar en bloques de código
 
 nav:
   - Inicio: index.md
   - Programación:
-      - Programación Didáctica: programacion/programacion_didactica.md
-      - Criterios de Evaluación: programacion/criterios_evaluacion.md
+      - Programación didáctica: programacion/programacion_didactica.md
+      - Criterios de evaluación: programacion/criterios_evaluacion.md
       - Temporalización: programacion/temporalizacion.md
   - Aula:
       - "Unidad 1 · Laboratorio Digital (Tecnología al servicio de las ciencias)": aula/u1-laboratorio-digital.md
@@ -16,7 +22,16 @@ nav:
   - Recursos:
       - Apps: recursos/apps/README.md
       - Simulaciones PhET: recursos/simulaciones/phET_enlaces.md
-      - Guía Visual Coding: recursos/materiales/guia_visualcoding.md
+      - Materiales:
+          - Guía Visual Coding: recursos/materiales/guia_visualcoding.md
+          - Plantilla memoria técnica: recursos/materiales/plantilla_memoria_tecnica.md
+          - Plantilla póster: recursos/materiales/plantilla_poster.md
+          - Formulario de coevaluación (Moodle - Feedback): recursos/materiales/formulario_coevaluacion_feedback.md
+      - Cuestionarios (GIFT):
+          - Potencias y notación científica: recursos/cuestionarios/quiz_potencias.gift
+          - CHONPS y estructura de la materia: recursos/cuestionarios/quiz_chonps_materia.gift
+          - Coevaluación U1: recursos/cuestionarios/coevaluacion_u1.gift
+
 
 
 
