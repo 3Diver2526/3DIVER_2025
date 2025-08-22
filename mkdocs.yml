@@ -24,13 +24,14 @@ nav:
       - Simulaciones PhET: recursos/simulaciones/phET_enlaces.md
       - Materiales:
           - Guía Visual Coding: recursos/materiales/guia_visualcoding.md
-          - Plantilla memoria técnica: recursos/materiales/plantilla_memoria_tecnica.md
+          - Plantilla memoria técnica: recursos/materiales/plantilla_memoria_tecnica_U1.md
           - Plantilla póster: recursos/materiales/plantilla_poster.md
           - Formulario de coevaluación (Moodle - Feedback): recursos/materiales/formulario_coevaluacion_feedback.md
       - Cuestionarios (GIFT):
           - Potencias y notación científica: recursos/cuestionarios/quiz_potencias.gift
           - CHONPS y estructura de la materia: recursos/cuestionarios/quiz_chonps_materia.gift
           - Coevaluación U1: recursos/cuestionarios/coevaluacion_u1.gift
+
 
 
 
