@@ -1,0 +1,292 @@
+
+<h2 class="sr-only">Ejercicios de sumar fuerzas para nivel 1.º ESO. Fuerzas en el mismo sentido, sentidos opuestos y equilibrio, con diagramas visuales e interactividad.</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:0.5rem 0 1.5rem}
+.sec{margin-bottom:2rem}
+.sec-title{font-size:16px;font-weight:500;margin-bottom:0.3rem}
+.sec-sub{font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem;line-height:1.65}
+.rule{background:var(--color-background-info);border-left:3px solid var(--color-text-info);padding:10px 14px;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;margin-bottom:1.25rem}
+.rule .lbl{font-size:11px;font-weight:500;color:var(--color-text-info);letter-spacing:.06em;margin-bottom:4px}
+.rule .txt{font-size:13px;line-height:1.65}
+.ex{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:1.25rem}
+.ex-label{font-size:11px;font-weight:500;color:var(--color-text-secondary);letter-spacing:.05em;margin-bottom:6px}
+.ex-q{font-size:14px;font-weight:500;margin-bottom:10px;line-height:1.5}
+.ex-hint{font-size:12px;color:var(--color-text-secondary);margin-bottom:10px;line-height:1.6}
+.opt-row{display:flex;flex-direction:column;gap:6px;margin-bottom:0}
+.opt{background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:9px 14px;font-size:13px;cursor:pointer;text-align:left;color:var(--color-text-primary);transition:all .15s}
+.opt:hover{background:var(--color-background-info);border-color:var(--color-border-info)}
+.opt.ok{background:var(--color-background-success);border-color:var(--color-border-success);color:var(--color-text-success)}
+.opt.no{background:var(--color-background-danger);border-color:var(--color-border-danger);color:var(--color-text-danger)}
+.fb{font-size:13px;margin-top:8px;padding:8px 12px;border-radius:var(--border-radius-md);display:none;line-height:1.6}
+.fb.show{display:block}
+.fb.ok{background:var(--color-background-success);color:var(--color-text-success)}
+.fb.no{background:var(--color-background-danger);color:var(--color-text-danger)}
+.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:1.5rem 0}
+</style>
+
+<div class="wrap">
+
+<!-- REGLA GENERAL -->
+<div class="rule">
+  <div class="lbl">REGLA PARA SUMAR FUERZAS</div>
+  <div class="txt">
+    <strong>Mismo sentido →</strong> se suman: R = F₁ + F₂<br>
+    <strong>Sentidos opuestos →</strong> se restan: R = F mayor − F menor (el sentido es el de la fuerza mayor)<br>
+    <strong>Fuerzas iguales y opuestas →</strong> se anulan: R = 0 (equilibrio)
+  </div>
+</div>
+
+<!-- ═══ CASO 1: MISMO SENTIDO ═══ -->
+<div class="sec">
+  <p class="sec-title">Caso 1 — Fuerzas en el mismo sentido</p>
+  <p class="sec-sub">Cuando dos fuerzas empujan en la misma dirección y el mismo sentido, simplemente se suman.</p>
+
+  <!-- Diagrama 1 -->
+  <svg width="100%" viewBox="0 0 680 100" role="img" style="margin-bottom:0.75rem">
+    <title>Dos fuerzas en el mismo sentido que se suman</title>
+    <desc>Un objeto con dos fuerzas hacia la derecha: 10 N y 8 N. La resultante es 18 N hacia la derecha.</desc>
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+    <!-- objeto -->
+    <rect x="280" y="38" width="60" height="24" rx="5" fill="none" stroke="var(--color-text-secondary)" stroke-width="1"/>
+    <text x="310" y="53" text-anchor="middle" dominant-baseline="central" class="ts" style="fill:var(--color-text-secondary)">objeto</text>
+    <!-- F1 -->
+    <line x1="340" y1="50" x2="430" y2="50" stroke="#185FA5" stroke-width="3" stroke-linecap="round" marker-end="url(#ar)"/>
+    <text x="385" y="38" text-anchor="middle" class="ts" style="fill:#185FA5;font-weight:500">10 N →</text>
+    <!-- F2 -->
+    <line x1="340" y1="65" x2="396" y2="65" stroke="#185FA5" stroke-width="2" stroke-linecap="round" marker-end="url(#ar)"/>
+    <text x="368" y="85" text-anchor="middle" class="ts" style="fill:#185FA5">8 N →</text>
+    <!-- Resultante -->
+    <line x1="340" y1="50" x2="480" y2="50" stroke="#3B6D11" stroke-width="2.5" stroke-dasharray="6 3" stroke-linecap="round" marker-end="url(#ar)"/>
+    <text x="490" y="50" dominant-baseline="central" class="ts" style="fill:#3B6D11;font-weight:500">R = 18 N →</text>
+  </svg>
+
+  <!-- EJ 1 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 1</div>
+    <div class="ex-q">Dos caballos tiran de un carro en la misma dirección y sentido. El primer caballo tira con 300 N y el segundo también con 300 N. ¿Cuál es la fuerza resultante?</div>
+    <div class="ex-hint">Pista: las dos fuerzas van en el mismo sentido → se suman.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e1')">300 N en ese sentido</button>
+      <button class="opt" onclick="ans(this,'ok','e1')">600 N en ese sentido (300 + 300)</button>
+      <button class="opt" onclick="ans(this,'no','e1')">0 N porque son iguales</button>
+    </div>
+    <div class="fb" id="e1"></div>
+  </div>
+
+  <!-- EJ 2 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 2</div>
+    <div class="ex-q">Dos alumnas empujan una mesa en la misma dirección y sentido. Una empuja con 110 N y la otra con 135 N. ¿Con cuánta fuerza total mueven la mesa?</div>
+    <div class="ex-hint">Pista: mismo sentido → R = 110 + 135 = ?</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e2')">25 N</button>
+      <button class="opt" onclick="ans(this,'no','e2')">135 N</button>
+      <button class="opt" onclick="ans(this,'ok','e2')">245 N</button>
+    </div>
+    <div class="fb" id="e2"></div>
+  </div>
+
+  <!-- EJ 3 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 3</div>
+    <div class="ex-q">Tres amigos empujan un coche averiado hacia la derecha con fuerzas de 150 N, 200 N y 250 N. ¿Cuál es la fuerza resultante?</div>
+    <div class="ex-hint">Pista: las tres fuerzas van en el mismo sentido → R = 150 + 200 + 250 = ?</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e3')">250 N →</button>
+      <button class="opt" onclick="ans(this,'ok','e3')">600 N →</button>
+      <button class="opt" onclick="ans(this,'no','e3')">300 N →</button>
+    </div>
+    <div class="fb" id="e3"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ CASO 2: SENTIDOS OPUESTOS ═══ -->
+<div class="sec">
+  <p class="sec-title">Caso 2 — Fuerzas en sentidos opuestos</p>
+  <p class="sec-sub">Cuando dos fuerzas actúan en sentidos contrarios, se restan. La resultante va en el sentido de la fuerza mayor.</p>
+
+  <!-- Diagrama 2 -->
+  <svg width="100%" viewBox="0 0 680 110" role="img" style="margin-bottom:0.75rem">
+    <title>Fuerzas en sentidos opuestos</title>
+    <desc>Un objeto con una fuerza de 325 N hacia la derecha y otra de 250 N hacia la izquierda. La resultante es 75 N hacia la derecha.</desc>
+    <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+    <!-- objeto -->
+    <rect x="300" y="40" width="60" height="24" rx="5" fill="none" stroke="var(--color-text-secondary)" stroke-width="1"/>
+    <text x="330" y="54" text-anchor="middle" dominant-baseline="central" class="ts" style="fill:var(--color-text-secondary)">objeto</text>
+    <!-- F derecha -->
+    <line x1="360" y1="52" x2="480" y2="52" stroke="#185FA5" stroke-width="3" stroke-linecap="round" marker-end="url(#ar2)"/>
+    <text x="420" y="39" text-anchor="middle" class="ts" style="fill:#185FA5;font-weight:500">325 N →</text>
+    <!-- F izquierda -->
+    <line x1="300" y1="68" x2="210" y2="68" stroke="#A32D2D" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ar2)"/>
+    <text x="255" y="90" text-anchor="middle" class="ts" style="fill:#A32D2D;font-weight:500">← 250 N</text>
+    <!-- Resultante -->
+    <line x1="360" y1="52" x2="400" y2="52" stroke="#3B6D11" stroke-width="2.5" stroke-dasharray="5 3" stroke-linecap="round" marker-end="url(#ar2)"/>
+    <text x="490" y="70" text-anchor="start" class="ts" style="fill:#3B6D11;font-weight:500">R = 75 N →</text>
+  </svg>
+
+  <!-- EJ 4 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 4</div>
+    <div class="ex-q">Dos grupos de niñas tiran de una cuerda. El grupo de la izquierda tira con 250 N y el grupo de la derecha con 325 N. ¿Cuál es la fuerza resultante?</div>
+    <div class="ex-hint">Pista: sentidos opuestos → R = fuerza mayor − fuerza menor = 325 − 250 = ? N hacia la derecha.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e4')">575 N hacia la derecha</button>
+      <button class="opt" onclick="ans(this,'ok','e4')">75 N hacia la derecha</button>
+      <button class="opt" onclick="ans(this,'no','e4')">75 N hacia la izquierda</button>
+    </div>
+    <div class="fb" id="e4"></div>
+  </div>
+
+  <!-- EJ 5 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 5</div>
+    <div class="ex-q">Dos perros tiran de los extremos de una goma. El perro de la derecha tira con 80 N y el de la izquierda con 95 N. ¿Cuál es la fuerza resultante y en qué sentido?</div>
+    <div class="ex-hint">Pista: R = 95 − 80 = ? N. El sentido es el de la fuerza mayor (95 N, que tira a la izquierda).</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e5')">175 N hacia la izquierda</button>
+      <button class="opt" onclick="ans(this,'no','e5')">15 N hacia la derecha</button>
+      <button class="opt" onclick="ans(this,'ok','e5')">15 N hacia la izquierda</button>
+    </div>
+    <div class="fb" id="e5"></div>
+  </div>
+
+  <!-- EJ 6 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 6</div>
+    <div class="ex-q">Un coche se mueve hacia la derecha con una fuerza motriz de 500 N. La fuerza de rozamiento es de 200 N (siempre contraria al movimiento). ¿Cuál es la fuerza neta?</div>
+    <div class="ex-hint">Pista: la fuerza motriz va → y el rozamiento va ←. R = 500 − 200 = ? N.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e6')">700 N →</button>
+      <button class="opt" onclick="ans(this,'ok','e6')">300 N →</button>
+      <button class="opt" onclick="ans(this,'no','e6')">300 N ←</button>
+    </div>
+    <div class="fb" id="e6"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ CASO 3: EQUILIBRIO ═══ -->
+<div class="sec">
+  <p class="sec-title">Caso 3 — Fuerzas iguales y opuestas (equilibrio)</p>
+  <p class="sec-sub">Cuando dos fuerzas tienen el mismo módulo pero sentidos contrarios, se anulan: la resultante es 0 N. El objeto está en equilibrio.</p>
+
+  <!-- Diagrama 3 -->
+  <svg width="100%" viewBox="0 0 680 100" role="img" style="margin-bottom:0.75rem">
+    <title>Fuerzas iguales y opuestas: equilibrio</title>
+    <desc>Un objeto con 250 N hacia la derecha y 250 N hacia la izquierda. Resultante = 0 N.</desc>
+    <defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+    <!-- objeto -->
+    <rect x="300" y="38" width="80" height="24" rx="5" fill="none" stroke="var(--color-text-secondary)" stroke-width="1"/>
+    <text x="340" y="52" text-anchor="middle" dominant-baseline="central" class="ts" style="fill:var(--color-text-secondary)">objeto</text>
+    <!-- F derecha -->
+    <line x1="380" y1="50" x2="480" y2="50" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ar3)"/>
+    <text x="430" y="37" text-anchor="middle" class="ts" style="fill:#185FA5;font-weight:500">250 N →</text>
+    <!-- F izquierda -->
+    <line x1="300" y1="60" x2="200" y2="60" stroke="#A32D2D" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ar3)"/>
+    <text x="250" y="82" text-anchor="middle" class="ts" style="fill:#A32D2D;font-weight:500">← 250 N</text>
+    <!-- Resultante -->
+    <text x="490" y="50" dominant-baseline="central" class="ts" style="fill:#3B6D11;font-weight:500">R = 0 N (equilibrio)</text>
+  </svg>
+
+  <!-- EJ 7 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 7</div>
+    <div class="ex-q">Dos grupos de niños tiran de una cuerda desde extremos opuestos, cada uno con 250 N. ¿Cuál es la fuerza resultante?</div>
+    <div class="ex-hint">Pista: misma fuerza, sentidos opuestos → R = 250 − 250 = ? N.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e7')">500 N</button>
+      <button class="opt" onclick="ans(this,'ok','e7')">0 N (equilibrio, nadie se mueve)</button>
+      <button class="opt" onclick="ans(this,'no','e7')">250 N hacia uno de los lados</button>
+    </div>
+    <div class="fb" id="e7"></div>
+  </div>
+
+  <!-- EJ 8 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 8</div>
+    <div class="ex-q">Un libro de 2 kg está sobre la mesa. El libro empuja la mesa con una fuerza de 19,6 N hacia abajo (su peso). La mesa empuja el libro con 19,6 N hacia arriba (fuerza normal). ¿Se mueve el libro?</div>
+    <div class="ex-hint">Pista: dos fuerzas iguales y opuestas → R = 0 N → equilibrio.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e8')">Sí, sube hacia arriba</button>
+      <button class="opt" onclick="ans(this,'no','e8')">Sí, cae hacia abajo</button>
+      <button class="opt" onclick="ans(this,'ok','e8')">No, está en equilibrio (R = 0 N)</button>
+    </div>
+    <div class="fb" id="e8"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ CASO 4: SISTEMA (fuerza motriz + rozamiento + peso) ═══ -->
+<div class="sec">
+  <p class="sec-title">Caso 4 — Situaciones con varias fuerzas</p>
+  <p class="sec-sub">A veces hay más de dos fuerzas. Se agrupa por sentido: sumamos las del mismo lado y restamos los grupos.</p>
+
+  <!-- EJ 9 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 9</div>
+    <div class="ex-q">Para levantar una caja, dos personas tiran hacia arriba con 200 N y 600 N. La caja pesa 490 N hacia abajo. ¿Cuál es la fuerza resultante?</div>
+    <div class="ex-hint">Pista: fuerzas hacia arriba = 200 + 600 = 800 N ↑. Fuerza hacia abajo = 490 N ↓. R = 800 − 490 = ? N.</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e9')">1290 N hacia arriba</button>
+      <button class="opt" onclick="ans(this,'ok','e9')">310 N hacia arriba</button>
+      <button class="opt" onclick="ans(this,'no','e9')">290 N hacia abajo</button>
+    </div>
+    <div class="fb" id="e9"></div>
+  </div>
+
+  <!-- EJ 10 -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 10</div>
+    <div class="ex-q">Un barco tiene dos motores que empujan hacia adelante con 5000 N cada uno. La resistencia del agua es de 3000 N hacia atrás. ¿Cuál es la fuerza neta?</div>
+    <div class="ex-hint">Pista: hacia adelante = 5000 + 5000 = 10000 N. Hacia atrás = 3000 N. R = 10000 − 3000 = ?</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e10')">3000 N hacia adelante</button>
+      <button class="opt" onclick="ans(this,'no','e10')">13000 N hacia adelante</button>
+      <button class="opt" onclick="ans(this,'ok','e10')">7000 N hacia adelante</button>
+    </div>
+    <div class="fb" id="e10"></div>
+  </div>
+
+  <!-- EJ 11 — LIBRE -->
+  <div class="ex">
+    <div class="ex-label">Ejercicio 11 — Calcula tú</div>
+    <div class="ex-q">Una cuerda es tirada hacia la derecha con 400 N y hacia la izquierda con 180 N. Calcula la fuerza resultante (módulo y sentido).</div>
+    <div class="ex-hint">Paso 1: ¿van en el mismo sentido o en sentidos opuestos? &nbsp; Paso 2: ¿sumo o resto? &nbsp; Paso 3: ¿cuál es la mayor?</div>
+    <div class="opt-row">
+      <button class="opt" onclick="ans(this,'no','e11')">580 N hacia la derecha</button>
+      <button class="opt" onclick="ans(this,'ok','e11')">220 N hacia la derecha (400 − 180)</button>
+      <button class="opt" onclick="ans(this,'no','e11')">220 N hacia la izquierda</button>
+    </div>
+    <div class="fb" id="e11"></div>
+  </div>
+</div>
+
+</div>
+
+<script>
+var FB={
+  e1:{ok:"Correcto. Mismo sentido → R = 300 + 300 = 600 N en ese sentido.",no:"No. Las fuerzas van en el mismo sentido, así que se suman: 300 + 300 = 600 N."},
+  e2:{ok:"Correcto. Mismo sentido → R = 110 + 135 = 245 N.",no:"No. Mismo sentido → se suman. R = 110 + 135 = 245 N."},
+  e3:{ok:"Correcto. Tres fuerzas en el mismo sentido: R = 150 + 200 + 250 = 600 N →.",no:"No. Todas van hacia el mismo lado, así que se suman todas: 150 + 200 + 250 = 600 N."},
+  e4:{ok:"Correcto. Sentidos opuestos → R = 325 − 250 = 75 N hacia la derecha (el lado de la fuerza mayor).",no:"Fíjate en el sentido. 325 N hacia la derecha y 250 N hacia la izquierda → R = 325 − 250 = 75 N hacia la derecha."},
+  e5:{ok:"Correcto. R = 95 − 80 = 15 N. El sentido es el de la fuerza mayor, que tira hacia la izquierda.",no:"Sentidos opuestos → se restan. R = 95 − 80 = 15 N. El sentido es el de la fuerza mayor (95 N hacia la izquierda)."},
+  e6:{ok:"Correcto. Fuerza motriz 500 N → y rozamiento 200 N ← → R = 500 − 200 = 300 N hacia la derecha.",no:"No. El rozamiento actúa siempre en sentido contrario al movimiento. R = 500 − 200 = 300 N hacia la derecha."},
+  e7:{ok:"Correcto. Fuerzas iguales y opuestas → se anulan: R = 0 N. El objeto está en equilibrio.",no:"Fuerzas iguales y opuestas → R = 250 − 250 = 0 N. Equilibrio: nadie gana."},
+  e8:{ok:"Correcto. Peso ↓ = 19,6 N y normal ↑ = 19,6 N. Son iguales y opuestas → R = 0 → el libro no se mueve.",no:"Peso = 19,6 N ↓ y normal = 19,6 N ↑. Son iguales y opuestas → R = 0 N → equilibrio."},
+  e9:{ok:"Correcto. ↑ = 200 + 600 = 800 N. ↓ = 490 N. R = 800 − 490 = 310 N hacia arriba.",no:"Agrupa por sentido: ↑ = 200 + 600 = 800 N. ↓ = 490 N. R = 800 − 490 = 310 N hacia arriba."},
+  e10:{ok:"Correcto. Adelante = 5000 + 5000 = 10000 N. Atrás = 3000 N. R = 10000 − 3000 = 7000 N adelante.",no:"Agrupa: adelante = 10000 N, atrás = 3000 N. R = 10000 − 3000 = 7000 N hacia adelante."},
+  e11:{ok:"Correcto. Sentidos opuestos → R = 400 − 180 = 220 N hacia la derecha (el lado de la fuerza mayor).",no:"Sentidos opuestos → se restan. R = 400 − 180 = 220 N. El sentido es el de la mayor (400 N → derecha)."}
+};
+function ans(btn,type,id){
+  btn.parentNode.querySelectorAll('.opt').forEach(b=>{b.disabled=true});
+  btn.classList.add(type==='ok'?'ok':'no');
+  var d=document.getElementById(id);
+  d.textContent=type==='ok'?FB[id].ok:FB[id].no;
+  d.className='fb show '+(type==='ok'?'ok':'no');
+}
+</script>
